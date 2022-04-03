@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+.gg-profile {
+    margin-left: -2px;
+}
+.gg-shield {
+    margin-left: 2px;
+    padding: 0;
+    margin-top: -12px
+}
+.gg-search {
+    margin-left: 10px;
+}
+.gg-bell {
+    margin-left:auto;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.15em;
+}
+
+
+a {
+    text-decoration: none;
+}
+
+body {
+    display: grid;
+    grid-template-columns: 290px 1fr;
+    grid-template-rows: auto 1fr;
+    min-height: 100vh;
+}
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    background-color: cornflowerblue;
+    gap: 2rem;
+    grid-row: 1 / -1;
+    box-shadow: 5px 0 6px rgba(36, 36, 36, 0.13);
+    z-index: 2;
+}
+
+.logo-container {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    gap: 1rem;
+    padding: 1.7rem;
+    color: white;
+}
+
+.logo-img {
+    width: 50px;
+    color: white;
+}
+
+.logo-text {
+    font-family: 'Roboto', sans-serif;
+}
+
+.nav-link-container {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    gap: 10px;
+}
+
+.nav-item {
+    display: flex;
+    text-decoration: none;
+    padding: 1rem;
+    gap: 15px;
+    align-items: center;
+    color: white;
+    border-radius: 5px;
+}
+
+.nav-item:hover {
+    background-color: rgba(0, 0, 0, 0.171);
+    box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.13);
+}
+
+.nav-item-text {
+    color: inherit;
+}
+
+.dash-header {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.13);
+    padding: 1rem 1.5rem;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    padding: 0.7rem 2rem;
+    gap: 2rem;
+}
+
+.search {
+    border: none;
+    background-color: rgb(236, 236, 236);
+    border-radius: 20px;
+    padding: 0.5rem 1rem;
+    outline: none;
+    max-width: 700px;
+    flex-grow: 2;
+}
+
+.profile-pic {
+    border-radius: 50%;
+    box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.13);
+}
+
+.username-s {
+    font-size: 1rem;
+}
+
+.greeting-container {
+    margin-right: auto;
+    line-height: 1.7rem;
+}
+
+username-l {
+    font-size: 6rem;
+}
+
+button {
+    background-color: cornflowerblue;
+    padding: 1rem 2rem;
+    border: none;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 30px;
+}
+
+button:hover {
+    background-color: rgb(71, 106, 172);
+    box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.13);
+}
+
+.main {
+    background-color: rgb(235, 235, 235);
+    z-index: -1;
+    display: grid;
+    grid-template-columns: 5fr 2fr;
+    grid-template-rows: min-content max-content;
+    padding: 1.5rem;
+    gap: 1.5rem;
+}
+
+.project-card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+#projects-title {
+    grid-column: 1 / -1;
+}
+
+.announcements-container {
+    grid-column: 2 / 3;
+    grid-row: 1 / last-line;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.project-card {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-left: 7px solid orange;
+    justify-content: center;
+    gap: 1rem;
+    padding: 1.7rem;
+    border-radius: 10px;
+    box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.13);
+}
+
+.card-function-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 30px;
+    color: rgb(63, 63, 63);
+}
+
+.announcement-card {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding: 1.7rem;
+    border-radius: 10px;
+    box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.13);
+    gap: 1.5rem;
+}
+
+.announcement {
+    border-bottom: 1px lightgray solid;
+    padding-bottom: 1.5rem;
+}
+
+.announcement:last-child {
+    border-bottom: none;
+}
+
+.announcement-text {
+    font-size: 0.8rem;
+}
+
+.announcement-title {
+    line-height: 1.7rem;
+}
+
+.trending-item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+}
+
+.trending-pfp {
+    width: 50px;
+    border-radius: 50%;
+}
+
+.trending-handle-container {
+    line-height: 1.3rem;
+    color: rgb(58, 58, 58);
+}
+
+.handle, .trending-name{
+    font-size: 0.9rem;
+    font-weight: 400;
+}
